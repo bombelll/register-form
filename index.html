@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="form">
+            <h1>Zarejestruj się</h1>
+            <div class="form__content">
+            <!-- Username Input -->
+            <div class="form__line">
+                <label for="username">Nazwa użytkownika:</label>
+                <input class="form__input" type="text" name="username" id="js-username" placeholder="np. Jan">
+                <small id="js-username-error"></small>
+            </div>
+            <!-- Mail Input -->
+            <div class="form__line">
+                <label for="Mail">E-mail:</label>
+                <input class="form__input" type="text" name="username" id="js-mail" placeholder="np. jankowalski@gmail.com">
+                <small id="js-mail-error"></small>
+            </div>
+            <!-- Password Input -->
+            <div class="form__line">
+                <label for="password">Hasło:</label>
+                <input class="form__input" type="password" name="password" id="js-password">
+                <small id="js-password-error"></small>
+            </div>
+            <!-- Repeat Password Input -->
+            <div class="form__line">
+                <label for="password">Powtórz hasło:</label>
+                <input class="form__input" type="password" name="repeat-password" id="js-repeat-password">
+                <small id="js-repeat-password-error"></small>
+            </div>
+            <!-- Confirm Form -->
+            <div class="form__line">
+                <input id="js-confirm-form" class="btn" type="submit" value="Zarejestruj się">
+            </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
